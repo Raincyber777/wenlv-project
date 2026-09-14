@@ -1,0 +1,50 @@
+<view class="page" style="padding-top: {{statusBarHeight}}px">
+  <view class="top-bar">
+    <view class="weather">
+      <text class="weather-icon">🌤️</text>
+      <view class="weather-main">
+        <text class="weather-temp">22°C</text>
+        <text class="weather-desc">多云 · 微风</text>
+      </view>
+    </view>
+    <view class="crowd-pill">
+      <view class="crowd-dot"></view>
+      <text class="crowd-text">😊 舒适 1200人在园</text>
+    </view>
+  </view>
+
+  <view class="title-block">
+    <view class="main-title">
+      <text class="title-green">问道青城山</text>
+      <text class="title-dark">·拜水都江堰</text>
+    </view>
+    <text class="sub-title">青城天下幽 — 世界文化遗产</text>
+  </view>
+
+  <view class="ai-card">
+    <view class="ai-head">
+      <view class="ai-avatar">🙂</view>
+      <view class="ai-head-info">
+        <text class="ai-name">AI 智能伴游 · 小青</text>
+        <text class="ai-desc">嗨！我是你的青城山专属导游,关于青城山的一切都可以问我～</text>
+      </view>
+    </view>
+    <view class="voice-pill" bindlongpress="onVoice" bindtap="onVoice">
+      <text class="voice-icon">🎙</text>
+      <text>长按说话,问我关于青城山的一切</text>
+    </view>
+    <view class="ai-chips">
+      <view class="ai-chip" wx:for="{{chips}}" wx:key="*this" data-q="{{item}}" bindtap="onChip">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="section-head">
+    <text class="section-title">🎯 个性化路线推荐</text>
+    <text class="section-more" bindtap="onMore">查看更多 ›</text>
+  </view>
+  <fit-panel bind:plan="onPlan" />
+
+  <service-panel />
+
+  <tab-bar active="home" badge="3" />
+</view>

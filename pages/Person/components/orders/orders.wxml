@@ -1,0 +1,18 @@
+<view class="orders-card">
+  <text class="orders-title">我的订单</text>
+  <view class="orders-grid">
+    <view
+      class="order-item"
+      wx:for="{{orders}}"
+      wx:key="key"
+      data-type="{{item.name}}"
+      bindtap="onOrder"
+      hover-class="order-item-hover"
+    >
+      <view class="order-icon" style="background: {{item.bg}}">
+        <text class="order-emoji">{{item.icon}}</text>
+      </view>
+      <text class="order-name">{{item.name}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,21 @@
+<view class="page" style="padding-top: {{statusBarHeight}}px">
+  <view class="navbar">
+    <text class="navbar-title">景区导览</text>
+    <view class="search-btn" bindtap="onSearch">
+      <view class="search-circle"></view>
+      <view class="search-handle"></view>
+    </view>
+  </view>
+
+  <spot-map bind:fullscreen="onFullscreen" />
+
+  <view class="tabs">
+    <view class="tab-item {{activeTab === 'head' ? 'tab-active' : ''}}" data-tab="head" bindtap="switchTab">前山</view>
+    <view class="tab-item {{activeTab === 'behind' ? 'tab-active' : ''}}" data-tab="behind" bindtap="switchTab">后山</view>
+  </view>
+
+  <head-panel wx:if="{{activeTab === 'head'}}" bind:navigate="onNavigate" bind:play="onPlay" />
+  <behind-panel wx:elif="{{activeTab === 'behind'}}" bind:navigate="onNavigate" bind:play="onPlay" />
+
+  <tab-bar active="guide" badge="3" />
+</view>

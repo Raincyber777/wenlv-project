@@ -1,0 +1,22 @@
+<view class="msg-list">
+  <view
+    class="msg-item"
+    wx:for="{{list}}"
+    wx:key="id"
+    data-title="{{item.title}}"
+    bindtap="onItem"
+    hover-class="msg-item-hover"
+  >
+    <view class="msg-icon" style="background: {{item.bg}}">
+      <text class="msg-emoji">{{item.icon}}</text>
+    </view>
+    <view class="msg-body">
+      <view class="msg-title-row">
+        <text class="msg-title">{{item.title}}</text>
+        <view class="msg-dot" wx:if="{{item.unread}}"></view>
+      </view>
+      <text class="msg-content">{{item.content}}</text>
+    </view>
+    <text class="msg-time">{{item.time}}</text>
+  </view>
+</view>

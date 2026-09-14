@@ -1,0 +1,20 @@
+<view class="service-section">
+  <view class="service-head">
+    <text class="service-title">⚡ 快捷服务</text>
+  </view>
+  <view class="service-grid">
+    <view
+      class="service-item"
+      wx:for="{{services}}"
+      wx:key="id"
+      data-name="{{item.name}}"
+      bindtap="onService"
+      hover-class="service-item-hover"
+    >
+      <view class="service-icon" style="background: {{item.bg}}">
+        <text class="service-emoji">{{item.icon}}</text>
+      </view>
+      <text class="service-name">{{item.name}}</text>
+    </view>
+  </view>
+</view>

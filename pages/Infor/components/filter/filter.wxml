@@ -1,0 +1,9 @@
+<view class="filter-row">
+  <view
+    class="filter-chip {{active === item.key ? 'chip-active' : ''}}"
+    wx:for="{{tabs}}"
+    wx:key="key"
+    data-key="{{item.key}}"
+    bindtap="onTap"
+  >{{item.name}}</view>
+</view>

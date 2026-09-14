@@ -1,0 +1,21 @@
+.filter-row {
+  display: flex;
+  padding: 20rpx 32rpx 8rpx;
+}
+
+.filter-chip {
+  padding: 12rpx 34rpx;
+  border-radius: 999rpx;
+  background: #ffffff;
+  font-size: 26rpx;
+  color: #666666;
+  margin-right: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(17, 24, 39, 0.04);
+}
+
+.chip-active {
+  background: #0eb877;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 6rpx 16rpx rgba(14, 184, 119, 0.3);
+}

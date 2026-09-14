@@ -1,0 +1,53 @@
+.service-section {
+  margin: 8rpx 32rpx 0;
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 28rpx 24rpx 32rpx;
+  box-shadow: 0 4rpx 16rpx rgba(17, 24, 39, 0.04);
+}
+
+.service-head {
+  padding: 0 8rpx;
+}
+
+.service-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.service-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item-hover {
+  opacity: 0.7;
+}
+
+.service-icon {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-emoji {
+  font-size: 48rpx;
+  line-height: 1;
+}
+
+.service-name {
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  color: #333333;
+}

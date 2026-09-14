@@ -1,0 +1,22 @@
+<view class="spot-list">
+  <view class="spot-card" wx:for="{{spots}}" wx:key="id">
+    <view class="spot-icon" style="background: {{item.bg}}">
+      <text class="spot-emoji">{{item.icon}}</text>
+    </view>
+    <view class="spot-info">
+      <view class="spot-head">
+        <text class="spot-name">{{item.name}}</text>
+        <view class="spot-distance">
+          <text class="spot-pin"></text>
+          <text>{{item.distance}}</text>
+        </view>
+      </view>
+      <text class="spot-desc">{{item.desc}}</text>
+      <view class="audio-tag" data-name="{{item.name}}" bindtap="onPlay">
+        <text class="audio-play">▶</text>
+        <text>语音讲解 {{item.audio}}</text>
+      </view>
+    </view>
+    <view class="nav-btn" data-name="{{item.name}}" bindtap="onNavigate">导航</view>
+  </view>
+</view>

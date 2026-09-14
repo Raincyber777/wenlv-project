@@ -1,0 +1,73 @@
+.page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding-bottom: 180rpx;
+}
+
+.navbar {
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32rpx;
+  background: #ffffff;
+}
+
+.navbar-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.search-btn {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.search-circle {
+  position: absolute;
+  left: 2rpx;
+  top: 2rpx;
+  width: 24rpx;
+  height: 24rpx;
+  border: 4rpx solid #333333;
+  border-radius: 50%;
+}
+
+.search-handle {
+  position: absolute;
+  right: 6rpx;
+  bottom: 6rpx;
+  width: 14rpx;
+  height: 4rpx;
+  background: #333333;
+  border-radius: 2rpx;
+  transform: rotate(45deg);
+  transform-origin: 0 50%;
+}
+
+.tabs {
+  display: flex;
+  margin: 24rpx 32rpx;
+  background: #eceff1;
+  border-radius: 44rpx;
+  padding: 6rpx;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 18rpx 0;
+  font-size: 30rpx;
+  color: #666666;
+  border-radius: 38rpx;
+  transition: all 0.2s;
+}
+
+.tab-active {
+  background: #0eb877;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 6rpx 16rpx rgba(14, 184, 119, 0.3);
+}

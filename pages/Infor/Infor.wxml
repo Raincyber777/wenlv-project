@@ -1,0 +1,12 @@
+<view class="page" style="padding-top: {{statusBarHeight}}px">
+  <view class="nav">
+    <text class="nav-title">消息</text>
+    <text class="nav-action" bindtap="onMarkRead">全部已读</text>
+  </view>
+
+  <msg-filter active="{{activeFilter}}" bind:change="onFilter" />
+  <msg-list list="{{filteredMessages}}" bind:item="onItem" />
+
+  <view class="bottom-space"></view>
+  <tab-bar active="infor" badge="{{badge}}" />
+</view>

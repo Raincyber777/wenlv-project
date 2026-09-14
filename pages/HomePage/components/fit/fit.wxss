@@ -1,0 +1,92 @@
+.fit-swiper {
+  height: 500rpx;
+}
+
+.fit-card {
+  margin: 0 32rpx;
+  height: 440rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4rpx 16rpx rgba(17, 24, 39, 0.04);
+}
+
+.fit-card-hover {
+  transform: scale(0.98);
+  opacity: 0.92;
+}
+
+.fit-banner {
+  height: 200rpx;
+  display: flex;
+  align-items: flex-end;
+  padding: 24rpx 28rpx;
+}
+
+.fit-banner-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.fit-body {
+  padding: 24rpx 28rpx;
+}
+
+.fit-name {
+  display: block;
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #111111;
+}
+
+.fit-tags {
+  display: flex;
+  margin-top: 14rpx;
+}
+
+.fit-tag {
+  font-size: 20rpx;
+  color: #0eb877;
+  background: #e7f8f0;
+  padding: 6rpx 14rpx;
+  border-radius: 8rpx;
+  margin-right: 12rpx;
+}
+
+.fit-tag-hot {
+  color: #f5722d;
+  background: #fff0e5;
+}
+
+.fit-meta {
+  display: flex;
+  align-items: center;
+  margin-top: 14rpx;
+}
+
+.fit-meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+  color: #8a8f99;
+  margin-right: 28rpx;
+}
+
+.fit-meta-pin {
+  width: 12rpx;
+  height: 12rpx;
+  background: #e5484d;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  margin-right: 8rpx;
+}
+
+.fit-meta-clock {
+  width: 14rpx;
+  height: 14rpx;
+  border: 3rpx solid #8a8f99;
+  border-radius: 50%;
+  margin-right: 8rpx;
+  box-sizing: border-box;
+}

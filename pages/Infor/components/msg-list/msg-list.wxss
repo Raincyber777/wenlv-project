@@ -1,0 +1,72 @@
+.msg-list {
+  background: #f6f7f8;
+}
+
+.msg-item {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 30rpx 32rpx;
+  margin-bottom: 4rpx;
+}
+
+.msg-item-hover {
+  background: #fafbfc;
+}
+
+.msg-icon {
+  width: 84rpx;
+  height: 84rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.msg-emoji {
+  font-size: 40rpx;
+  line-height: 1;
+}
+
+.msg-body {
+  flex: 1;
+  margin: 0 20rpx;
+  min-width: 0;
+}
+
+.msg-title-row {
+  display: flex;
+  align-items: center;
+}
+
+.msg-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #111111;
+}
+
+.msg-dot {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background: #f53f3f;
+  margin-left: 12rpx;
+}
+
+.msg-content {
+  display: block;
+  font-size: 24rpx;
+  color: #8a8f99;
+  margin-top: 10rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.msg-time {
+  font-size: 22rpx;
+  color: #b3b9c4;
+  flex-shrink: 0;
+  margin-top: 4rpx;
+}

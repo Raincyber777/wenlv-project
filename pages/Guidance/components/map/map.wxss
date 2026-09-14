@@ -1,0 +1,78 @@
+.map-card {
+  position: relative;
+  margin: 24rpx 32rpx 0;
+  height: 360rpx;
+  border-radius: 28rpx;
+  overflow: hidden;
+  background: linear-gradient(150deg, #f2fcf6 0%, #c9f2dd 40%, #8fe6bd 100%);
+}
+
+.map-route {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20600%20360'%20preserveAspectRatio='none'%3E%3Cpath%20d='M78%20242C150%20130,220%20118,276%20158C340%20205,400%20160,456%2070'%20fill='none'%20stroke='%230a5c46'%20stroke-width='5'%20stroke-dasharray='13%2011'%20stroke-linecap='round'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}
+
+.map-dot {
+  position: absolute;
+  width: 22rpx;
+  height: 22rpx;
+  border-radius: 50%;
+  background: #0a5c46;
+  box-shadow: 0 4rpx 10rpx rgba(10, 92, 70, 0.4);
+}
+
+.dot-a {
+  left: 12%;
+  top: 66%;
+}
+
+.dot-b {
+  left: 45%;
+  top: 43%;
+}
+
+.dot-c {
+  left: 75%;
+  top: 17%;
+  background: #e5484d;
+  box-shadow: 0 4rpx 10rpx rgba(229, 72, 77, 0.4);
+}
+
+.map-label {
+  position: absolute;
+  font-size: 26rpx;
+  color: #0a5c46;
+  font-weight: 600;
+}
+
+.label-a {
+  left: 13%;
+  top: 6%;
+}
+
+.label-b {
+  left: 46%;
+  top: 12%;
+}
+
+.label-c {
+  left: 68%;
+  top: 2%;
+}
+
+.fullscreen-btn {
+  position: absolute;
+  right: 24rpx;
+  bottom: 24rpx;
+  background: #ffffff;
+  border-radius: 999rpx;
+  padding: 14rpx 28rpx;
+  font-size: 26rpx;
+  color: #333333;
+  box-shadow: 0 6rpx 16rpx rgba(0, 0, 0, 0.08);
+}

@@ -1,0 +1,16 @@
+<view class="tab-bar">
+  <view
+    class="tab-item {{active === item.key ? 'active' : ''}}"
+    wx:for="{{tabs}}"
+    wx:key="key"
+    data-tab="{{item.key}}"
+    bindtap="onTap"
+  >
+    <view class="tab-indicator {{active === item.key ? 'show' : ''}}"></view>
+    <view class="icon-wrap">
+      <text class="tab-icon">{{item.icon}}</text>
+      <view class="tab-badge" wx:if="{{item.key === 'infor' && badge > 0}}">{{badge > 99 ? '99+' : badge}}</view>
+    </view>
+    <text class="tab-label">{{item.name}}</text>
+  </view>
+</view>

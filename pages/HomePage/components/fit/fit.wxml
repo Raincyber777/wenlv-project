@@ -1,0 +1,33 @@
+<swiper
+  class="fit-swiper"
+  indicator-dots="{{true}}"
+  indicator-color="rgba(14, 184, 119, 0.25)"
+  indicator-active-color="#0eb877"
+  autoplay
+  circular
+  interval="4000"
+>
+  <swiper-item wx:for="{{routes}}" wx:key="id">
+    <view class="fit-card" data-name="{{item.name}}" bindtap="onPlan" hover-class="fit-card-hover">
+      <view class="fit-banner" style="background: {{item.bannerBg}}">
+        <text class="fit-banner-title">{{item.banner}}</text>
+      </view>
+      <view class="fit-body">
+        <text class="fit-name">{{item.name}}</text>
+        <view class="fit-tags">
+          <text class="fit-tag {{tag === '高强度' ? 'fit-tag-hot' : ''}}" wx:for="{{item.tags}}" wx:for-item="tag" wx:key="*this">{{tag}}</text>
+        </view>
+        <view class="fit-meta">
+          <view class="fit-meta-item">
+            <text class="fit-meta-pin"></text>
+            <text>{{item.distance}}</text>
+          </view>
+          <view class="fit-meta-item">
+            <text class="fit-meta-clock"></text>
+            <text>{{item.duration}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

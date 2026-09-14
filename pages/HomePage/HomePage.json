@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "fit-panel": "./components/fit/fit",
+    "service-panel": "./components/service/service",
+    "tab-bar": "../../components/tab-bar/tab-bar"
+  }
+}

@@ -1,0 +1,7 @@
+<view class="page" style="padding-top: {{statusBarHeight}}px">
+  <profile-card />
+  <orders-card bind:order="onOrder" />
+  <menu-card bind:menu="onMenu" />
+
+  <tab-bar active="mine" badge="3" />
+</view>

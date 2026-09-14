@@ -1,0 +1,10 @@
+<view class="map-card">
+  <view class="map-route"></view>
+  <text class="map-label label-a">山门</text>
+  <text class="map-label label-b">天师洞</text>
+  <text class="map-label label-c">老君阁</text>
+  <view class="map-dot dot-a"></view>
+  <view class="map-dot dot-b"></view>
+  <view class="map-dot dot-c"></view>
+  <view class="fullscreen-btn" bindtap="onFullscreen">全屏地图 ›</view>
+</view>

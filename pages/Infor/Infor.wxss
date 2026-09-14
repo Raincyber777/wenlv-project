@@ -1,0 +1,27 @@
+.page {
+  min-height: 100vh;
+  background: #f6f7f8;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 32rpx;
+  background: #ffffff;
+}
+
+.nav-title {
+  font-size: 38rpx;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.nav-action {
+  font-size: 26rpx;
+  color: #8a8f99;
+}
+
+.bottom-space {
+  height: 180rpx;
+}

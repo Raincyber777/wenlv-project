@@ -1,0 +1,20 @@
+<view class="profile-card">
+  <view class="profile-row">
+    <view class="avatar">🦁</view>
+    <view class="user-info">
+      <text class="user-name">{{name}}</text>
+      <text class="user-tag">{{tag}}</text>
+    </view>
+  </view>
+  <view class="stat-row">
+    <view class="stat-item">
+      <text class="stat-num">{{points}}</text>
+      <text class="stat-label">积分</text>
+    </view>
+    <view class="stat-divider"></view>
+    <view class="stat-item">
+      <text class="stat-num">{{coupons}}</text>
+      <text class="stat-label">优惠券</text>
+    </view>
+  </view>
+</view>

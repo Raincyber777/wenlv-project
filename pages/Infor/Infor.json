@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "msg-filter": "./components/filter/filter",
+    "msg-list": "./components/msg-list/msg-list",
+    "tab-bar": "../../components/tab-bar/tab-bar"
+  }
+}

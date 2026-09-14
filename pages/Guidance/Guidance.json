@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "spot-map": "./components/map/map",
+    "head-panel": "./components/head/head",
+    "behind-panel": "./components/behind/behind",
+    "tab-bar": "../../components/tab-bar/tab-bar"
+  }
+}

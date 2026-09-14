@@ -1,0 +1,17 @@
+<view class="menu-card">
+  <view
+    class="menu-item"
+    wx:for="{{menus}}"
+    wx:key="name"
+    data-name="{{item.name}}"
+    bindtap="onMenu"
+    hover-class="menu-item-hover"
+  >
+    <text class="menu-emoji">{{item.icon}}</text>
+    <view class="menu-body">
+      <text class="menu-name">{{item.name}}</text>
+      <text class="menu-desc">{{item.desc}}</text>
+    </view>
+    <text class="menu-arrow">›</text>
+  </view>
+</view>

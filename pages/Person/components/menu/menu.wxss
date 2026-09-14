@@ -1,0 +1,54 @@
+.menu-card {
+  margin: 24rpx 32rpx 0;
+  border-radius: 24rpx;
+  padding: 0 28rpx;
+  background: #ffffff;
+  box-shadow: 0 4rpx 16rpx rgba(17, 24, 39, 0.04);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #f0f2f4;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-hover {
+  opacity: 0.7;
+}
+
+.menu-emoji {
+  font-size: 40rpx;
+  line-height: 1;
+  width: 64rpx;
+  flex-shrink: 0;
+}
+
+.menu-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-name {
+  display: block;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.menu-desc {
+  display: block;
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  color: #8a8f99;
+}
+
+.menu-arrow {
+  font-size: 40rpx;
+  color: #c5cad2;
+  flex-shrink: 0;
+}
